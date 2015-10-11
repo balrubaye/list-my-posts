@@ -1,0 +1,19 @@
+{
+  "name": "wordpress-post",
+  "version": "1.0.0",
+  "description": "List of posts",
+  "main": "index.html",
+  "scripts": {
+    "test": "sd"
+  },
+  "author": "Bassam Al Rubaye",
+  "license": "ISC",
+  "devDependencies": {
+    "bower": "^1.5.3",
+    "gulp": "^3.9.0",
+    "gulp-clean": "^0.3.1",
+    "gulp-concat": "^2.6.0",
+    "gulp-webserver": "^0.9.1",
+    "main-bower-files": "^2.9.0"
+  }
+}
