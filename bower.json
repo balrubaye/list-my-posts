@@ -17,14 +17,16 @@
     "test",
     "tests"
   ],
-    "overrides": {
-        "BOWER-PACKAGE": {
-            "main": "**/*.min.js"
-        }
-    },
+  "overrides": {
+    "BOWER-PACKAGE": {
+      "main": "**/*.min.js"
+    }
+  },
   "dependencies": {
     "angular": "~1.4.7",
     "bootstrap": "~3.3.5",
-    "angular-route": "~1.4.7"
+    "angular-route": "~1.4.7",
+    "angular-mocks": "~1.4.7",
+    "ng-infinite-scroll": "~0.0.1"
   }
 }

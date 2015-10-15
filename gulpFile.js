@@ -14,7 +14,7 @@ gulp.task('assets', function(){
 
 
 gulp.task('watch', function(){
-    gulp.src('app/src');
+    gulp.watch('app/src/**/**/*.js', ['concat']);
 });
 
 

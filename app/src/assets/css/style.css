@@ -1,0 +1,16 @@
+div.post{
+    display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  overflow: hidden;
+}
+
+
+
+div.thumbnail{
+    height: 30em;
+}
+
+div.thumbnail:hover{
+    border: 2px solid orange;
+}

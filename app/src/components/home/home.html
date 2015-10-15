@@ -1,0 +1,38 @@
+<div class="page-header" id="banner">
+        <div class="row">
+         
+            
+            
+          <div class="col-lg-9" style="float:none; margin:auto;">
+    <div class="form-group has-success">                  
+             <input type="text" id="inputSuccess" class="form-control" ng-model="search" placeholder="Filter results">
+     </div>	
+  </div>
+      
+      
+       <div infinite-scroll='srvs.nextPage()'  infinite-scroll-distance='1'>
+        
+        <div class="col-sm-6 col-md-4 post" ng-repeat='post in srvs.cur | filter:search' >
+        <div class="thumbnail">
+          <a href="{{post.URL}}">
+              <img  alt="100%x200" src="{{post.attachments[post.ID+1].URL || defaultImg }}"  
+              style="height: 200px; width: 100%; display: block;">
+          </a>
+          
+          <div class="caption">
+           <p><span class="label label-success" >{{post.date | date:'medium' }} </span> </p>
+           
+           <a href="{{post.URL}}">
+            <h3  > <span ng-bind-html='post.title   | limitLength:{len:30} | unsafe' ></span></h3>
+           </a>          
+             
+             <span ng-bind-html='post.excerpt | limitLength:{len:90} | unsafe' ></span>
+            
+          </div>
+          
+        </div>
+      </div>
+      
+      </div>
+      
+</div>
